@@ -1,0 +1,39 @@
+Blog:Érdekességek a fákról: A fák egyik leghasznosabb tulajdonsága az, hogy kiszûrik a levegõbõl a szennyezõ anyagokat és tiszta levegõt termelnek.
+A világ legöregebb fája, a Chiléi patagónciprus 5500 éves
+forrás:Guardian
+username: falover2000
+ dátum: 2022. 09. 21.
+Fõoldal text: A cégünk kiváló minõségû fákkal és festékekkel
+dolgozik versenyszerû áron.
+Neve: Fázunk
+Fa info: Cseresznyefa
+keményfa, vöröses színárnyalat
+Diófa
+könnyen faragható, gyönyörû rajzolatú
+Nyírfa
+közepesen sûrû, közepesen kemény
+Tölgyfa
+Legnagyobb tömörség, kemény fa
+Bükkfa
+keményfa, széles körben használható
+
+Rólunk: Basa Martin
+Kor: 16
+Webprogramozó
+A cég alapító tagja
+Dóczi Adrián
+Kor: 16
+JavaScripter
+A megbízott
+Ács Benjámin :Név
+16 :Kor
+Grafikus Designer :Munkája
+A cég alapító tagja
+
+XSmall szöveg:
+Minõsági fák
+Magyarországról
+Kedvezõ árak
+Csak a legjobb szakemberekkel
+
+Small fõoldal:A cégünk  csak kiváló minõségû fûkkal és festékekkel dolgozik a legjobb minõség érdekében
