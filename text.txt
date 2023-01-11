@@ -1,39 +1,58 @@
-Blog:Érdekességek a fákról: A fák egyik leghasznosabb tulajdonsága az, hogy kiszûrik a levegõbõl a szennyezõ anyagokat és tiszta levegõt termelnek.
-A világ legöregebb fája, a Chiléi patagónciprus 5500 éves
-forrás:Guardian
+Blog:Ã‰rdekessÃ©gek a fÃ¡krÃ³l: A fÃ¡k egyik leghasznosabb tulajdonsÃ¡ga az, hogy kiszÅ±rik a levegÅ‘bÅ‘l a szennyezÅ‘ anyagokat Ã©s tiszta levegÅ‘t termelnek.
+A vilÃ¡g legÃ¶regebb fÃ¡ja, a ChilÃ©i patagÃ³nciprus 5500 Ã©ves
+forrÃ¡s:Guardian
 username: falover2000
- dátum: 2022. 09. 21.
-Fõoldal text: A cégünk kiváló minõségû fákkal és festékekkel
-dolgozik versenyszerû áron.
-Neve: Fázunk
+ dÃ¡tum: 2022. 09. 21.
+FÅ‘oldal text: A cÃ©gÃ¼nk kivÃ¡lÃ³ minÅ‘sÃ©gÅ± fÃ¡kkal Ã©s festÃ©kekkel
+dolgozik versenyszerÅ± Ã¡ron.
+Neve: FÃ¡zunk
 Fa info: Cseresznyefa
-keményfa, vöröses színárnyalat
-Diófa
-könnyen faragható, gyönyörû rajzolatú
-Nyírfa
-közepesen sûrû, közepesen kemény
-Tölgyfa
-Legnagyobb tömörség, kemény fa
-Bükkfa
-keményfa, széles körben használható
+kemÃ©nyfa, vÃ¶rÃ¶ses szÃ­nÃ¡rnyalat
+DiÃ³fa
+kÃ¶nnyen faraghatÃ³, gyÃ¶nyÃ¶rÅ± rajzolatÃº
+NyÃ­rfa
+kÃ¶zepesen sÅ±rÅ±, kÃ¶zepesen kemÃ©ny
+TÃ¶lgyfa
+Legnagyobb tÃ¶mÃ¶rsÃ©g, kemÃ©ny fa
+BÃ¼kkfa
+kemÃ©nyfa, szÃ©les kÃ¶rben hasznÃ¡lhatÃ³
 
-Rólunk: Basa Martin
+RÃ³lunk: Basa Martin
 Kor: 16
-Webprogramozó
-A cég alapító tagja
-Dóczi Adrián
+WebprogramozÃ³
+A cÃ©g alapÃ­tÃ³ tagja
+DÃ³czi AdriÃ¡n
 Kor: 16
 JavaScripter
-A megbízott
-Ács Benjámin :Név
+A megbÃ­zott
+Ãcs BenjÃ¡min :NÃ©v
 16 :Kor
-Grafikus Designer :Munkája
-A cég alapító tagja
+Grafikus Designer :MunkÃ¡ja
+A cÃ©g alapÃ­tÃ³ tagja
 
-XSmall szöveg:
-Minõsági fák
-Magyarországról
-Kedvezõ árak
+XSmall szÃ¶veg:
+MinÅ‘sÃ¡gi fÃ¡k
+MagyarorszÃ¡grÃ³l
+KedvezÅ‘ Ã¡rak
 Csak a legjobb szakemberekkel
 
-Small fõoldal:A cégünk  csak kiváló minõségû fûkkal és festékekkel dolgozik a legjobb minõség érdekében
+Small fÅ‘oldal:A cÃ©gÃ¼nk  csak kivÃ¡lÃ³ minÅ‘sÃ©gÅ± fÅ±kkal Ã©s festÃ©kekkel dolgozik a legjobb minÅ‘sÃ©g Ã©rdekÃ©ben
+
+KosÃ¡r oldal: 
+HÃ¡zhozszÃ¡llÃ­tÃ¡s: xxxFT
+Ã–sszesen: xxxFT
+elfogadom az Ã¡szf feltÃ©teleket
++1 Ã©v garanciÃ¡t kÃ©rek (30.000FT)
+TovÃ¡bb a rendelÃ©shez
+
+Hirdetes:
+Figyelem! MegrÃ¡zÃ³ hÃ­rek!
+MentÅ‘st kellett hÃ­vni egy idÅ‘s fÃ©rfihez, akire szerdÃ¡n dÃ©lutÃ¡n egy fa dÅ‘lt.
+A fÃ©rfi sÃºlyosabb sÃ©rÃ¼lÃ©st nem szenvedett, viszont a fa az Ã¶sszes borÃ¡t kiborÃ­totta.
+A videÃ³ megtekintÃ©se a nyugalom megzavarÃ¡sÃ¡ra alkalmas!
+bezÃ¡r
+megnÃ©zem
+
+Hirdetes kikapcs text:
+Figyelem! NemrÃ©g kikapcsoltad a hÃ­rdetÃ©seket az oldalon! Ha szeretnÃ©d, visszakapcsolhatod Å‘ket a bekapcsolom gombbal, vagy ha tovÃ¡bbra sem kÃ­vÃ¡nod Ã©rdeklÅ‘dÃ©sedet kimutatni a legfrissebb Ã©s legextrÃ©mebb hÃ­rek irÃ¡nt, akkor lÃ©gy unalmas Ã©s hagyd kikapcsolva ezt a funkciÃ³t! Kikapcs :( Bekapcsolom!
+
