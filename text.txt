@@ -1,8 +1,5 @@
-Blog:Érdekességek a fákról: A fák egyik leghasznosabb tulajdonsága az, hogy kiszűrik a levegőből a szennyező anyagokat és tiszta levegőt termelnek.
-A világ legöregebb fája, a Chiléi patagónciprus 5500 éves
-forrás:Guardian
-username: falover2000
- dátum: 2022. 09. 21.
+Blog:
+Üzemeltetők: dadrian bmartin abeni
 Főoldal text: A cégünk kiváló minőségű fákkal és festékekkel
 dolgozik versenyszerű áron.
 Neve: Fázunk
