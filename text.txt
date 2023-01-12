@@ -1,0 +1,55 @@
+Blog:
+Üzemeltetők: dadrian bmartin abeni
+Főoldal text: A cégünk kiváló minőségű fákkal és festékekkel
+dolgozik versenyszerű áron.
+Neve: Fázunk
+Fa info: Cseresznyefa
+keményfa, vöröses színárnyalat
+Diófa
+könnyen faragható, gyönyörű rajzolatú
+Nyírfa
+közepesen sűrű, közepesen kemény
+Tölgyfa
+Legnagyobb tömörség, kemény fa
+Bükkfa
+keményfa, széles körben használható
+
+Rólunk: Basa Martin
+Kor: 16
+Webprogramozó
+A cég alapító tagja
+Dóczi Adrián
+Kor: 16
+JavaScripter
+A megbízott
+Ács Benjámin :Név
+16 :Kor
+Grafikus Designer :Munkája
+A cég alapító tagja
+
+XSmall szöveg:
+Minősági fák
+Magyarországról
+Kedvező árak
+Csak a legjobb szakemberekkel
+
+Small főoldal:A cégünk  csak kiváló minőségű fűkkal és festékekkel dolgozik a legjobb minőség érdekében
+
+Kosár oldal: 
+Házhozszállítás: xxxFT
+Összesen: xxxFT
+elfogadom az ászf feltételeket
++1 év garanciát kérek (30.000FT)
+Tovább a rendeléshez
+
+Hirdetes:
+Figyelem! Megrázó hírek!
+Mentőst kellett hívni egy idős férfihez, akire szerdán délután egy fa dőlt.
+A férfi súlyosabb sérülést nem szenvedett, viszont a fa az összes borát kiborította.
+A videó megtekintése a nyugalom megzavarására alkalmas!
+bezár
+megnézem
+
+Hirdetes kikapcs text:
+Figyelem! Nemrég kikapcsoltad a hírdetéseket az oldalon! Ha szeretnéd, visszakapcsolhatod őket a bekapcsolom gombbal, vagy ha továbbra sem kívánod érdeklődésedet kimutatni a legfrissebb és legextrémebb hírek iránt, akkor légy unalmas és hagyd kikapcsolva ezt a funkciót! Kikapcs :( Bekapcsolom!
+
