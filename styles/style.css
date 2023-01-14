@@ -256,9 +256,19 @@ h1 {
 }
 
 #bodyContent {
-  max-width: 10px;
+  max-width: 30px !important;
 }
 
 #red {
   color: red;
+}
+
+.content {
+  animation: blinker 10s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
