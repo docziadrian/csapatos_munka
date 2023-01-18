@@ -48,7 +48,7 @@ let generateCartItems = () => {
     BevasarloKocsi.innerHTML = ``;
     label.innerHTML = `
         <h2 class="text-center ml-5">A kosarad üres.</h2>
-        <a href="../../csapatos_munka/weboldalak/festekek.html"> <button type="button" class="btn btn-primary">Vásárolok</button> </a>
+        <a href="/weboldalak/festekek.html"> <button type="button" class="btn btn-primary">Vásárolok</button> </a>
         `;
   }
 };
@@ -139,7 +139,7 @@ let TotalAmount = () => {
                 <div class="modal-body">
                                 <div id="wrapper">
                                   <div id="info">
-                                    <img id="kep_final" src="../../csapatos_munka/Pictures/Vodrok/vodorsarga.png">
+                                    <img id="kep_final" src="/Pictures/Vodrok/vodorsarga.png">
                                     <p>Festékek</p>
                                       <h3 class="mb-5" id="osszesen2">${osszesen} FT</h3>
                                       <h4> <a href="https://developer.paypal.com/home/" target="_blank">? PayPal Sandbox módban ? </a></h4>

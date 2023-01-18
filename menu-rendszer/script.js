@@ -1,6 +1,6 @@
 //Egységes menü rendszer kialakítása:
 const nav = document.querySelector(".navbar"); //osztály alapján kiválasztja a menüt
-fetch("../../csapatos_munka/menu-rendszer/navbar.html") //Egy template -re hivatkozik, amiben a menü van
+fetch("/menu-rendszer/navbar.html") //Egy template -re hivatkozik, amiben a menü van
   .then((res) => res.text()) //=> function
   .then((data) => {
     nav.innerHTML = data;
@@ -16,5 +16,5 @@ function myFunction() {
 }
 
 function ugras_a_kosar_oldalra() {
-  window.location = "../../csapatos_munka/bevasarlo-kosar/kosar.html";
+  window.location = "/bevasarlo-kosar/kosar.html";
 }
