@@ -273,8 +273,43 @@ h1 {
   }
 }
 
-.popovergomb{
+.popovergomb {
   position: absolute;
   margin-left: 140px;
   bottom: 1px;
+}
+
+.keret {
+  flex-wrap: wrap;
+  break-after: always;
+  word-wrap: break-word;
+  width: 100%;
+  height: 100%;
+}
+
+.keret2 {
+  padding-right: 5em;
+  flex-wrap: wrap;
+  break-after: always;
+  word-wrap: break-word;
+  width: 100%;
+  height: 100%;
+  font-size: 120%;
+}
+
+.keret {
+  font-size: 120%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: zoom-in;
+}
+
+a > svg:hover {
+  border: 1px solid rgba(128, 128, 128, 0.503);
 }
