@@ -1,190 +1,35 @@
 <!DOCTYPE html>
 <html lang="hu">
   <head>
+    <title>Főoldal</title>
     <link
       rel="stylesheet"
-      href="/styles/blog_uzenetek.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
     />
-    <link rel="stylesheet" href="/styles/hirek.css" />
-    <title>Faanyagok</title>
   </head>
   <body onload="osszesites()">
-    <nav class="navbar navbar-expand-lg bg-dark position-fixed w-100">
+    <!-- Azért kell, hogy a kosárban lévő termékeknek
+a számát kiírja a navbaron. -->
+    <nav class="navbar navbar-expand-md bg-dark">
       <!-- Deklarálva van a navbar.html -ben -->
     </nav>
 
-    <div class="text-center">
-      <h3 class="p">Blog</h3>
-    </div>
-
-    <div class="m-5">
-      <h2>Üzemeltetők: <span id="nevek">dadrian bmartin abeni</span></h2>
-    </div>
-    <div id="bodyContent"></div>
-
-    <div class="mx-2 w-50 mb-5">
-      <div class="w-75 row border border-secondary rounded">
-        <h5 class="mt-5">Hozzá szeretnél tenni valamit a bloghoz?</h5>
-        <p>Neved: <input type="text" id="name" /></p>
-        <p>
-          Üzenet:
-          <input type="text" id="message" oninput="karakterek()" />
-          <span id="max_uzenet"></span>
-        </p>
-        <span class="col-md-6 text-center">
-          <button
-            class="gomb btn btn-lg border border-secondary"
-            id="submit"
-            type="submit"
-          >
-            Küldés
-          </button>
-        </span>
-      </div>
-    </div>
-
-    <!-- Modal -->
-    <div class="modal-box">
-      <div
-        class="modal fade"
-        id="myModal"
-        data-backdrop="static"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="myModalLabel"
-      >
-        <div class="modal-dialog" role="document">
-          <div class="modal-content">
-            <div class="modal-body">
-              <div class="modal-icon"><i class="fas fa-ban"></i></div>
-              <h3 class="title">Figyelem! <br />Megrázó hírek!</h3>
-              <p class="szoveg_modal">
-                Mentőst kellett hívni egy idős férfihez, akire szerdán délután
-                egy fa dőlt.
-              </p>
-              <p class="szoveg_modal">
-                A férfi súlyosabb sérülést nem szenvedett, viszon a fa az összes
-                borát kiborította.
-              </p>
-              <p class="szoveg_modal">
-                A videó megtekintése a nyugalom megzavarására alkalmas!
-              </p>
-              <button onclick="Kerdes()" class="btn" data-dismiss="modal">
-                bezár
-              </button>
-              <button id="myvideo" class="btn cancel" data-dismiss="modal">
-                megnézem
-              </button>
-              <br />
-              <div class="megjelenesKerdes">
-                <input type="checkbox" id="kerdesBlog" /> Ne jelenjen meg újra
-              </div>
-            </div>
-          </div>
+    <section>
+      <div class="container text-center">
+        <div class="shop" id="shop">
+          <!-- DEKLARÁLVA A KOSAR.JS -ben!
+                Azért JavaScriptben, mert könnyebb a lekérdezés,
+                amikor a local storage -ből id szerint lekérdezzük. -->
         </div>
       </div>
-    </div>
+    </section>
 
-    <div
-      class="modal fade"
-      id="myVideo"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="myVideo"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog hatter">
-        <div class="modal-content">
-          <div class="modal-body">
-            <button
-              type="button"
-              id="close"
-              class="close"
-              data-dismiss="modal"
-              aria-hidden="true"
-            >
-              &times;
-            </button>
-            <div class="text-center">
-              <video
-                width="100%"
-                height="100%"
-                id="hir_video"
-                src="/Pictures/videok/dol_a_fa.mp4"
-              ></video>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Modal -->
-    <div
-      class="modal fade"
-      id="myModalHirdetes"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="exampleModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog" role="document">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Hírek</h5>
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">&times;</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            Figyelem! Nemrég kikapcsoltad a hírdetéseket az oldalon! Ha
-            szeretnéd, visszakapcsolhatod őket a "bekapcsolom" gomb -bal, vagy
-            ha továbbra sem kívánod érdeklődésedet kimutatni a legfrissebb, és
-            legextrémebb hírek iránt, akkor légy unalmas, és hagyd kikapcsolva
-            ezt a funkciót!
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-dismiss="modal"
-            >
-              Kikapcs :(
-            </button>
-            <button
-              onclick="Bekapcsolta()"
-              type="button"
-              class="btn btn-success"
-            >
-              Bekapcsolom!
-            </button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script>
-      function karakterek() {
-        var x = document.getElementById("message").value;
-        if (x.length === 0) {
-          document.getElementById("max_uzenet").innerHTML = ``;
-        } else if (x.length > 50) {
-          document.getElementById("max_uzenet").style.color = "red";
-          document.getElementById("max_uzenet").innerHTML = `${x.length}/50`;
-        } else {
-          document.getElementById("max_uzenet").style.color = "black";
-          document.getElementById("max_uzenet").innerHTML = `${x.length}/50`;
-        }
-      }
-    </script>
-
-    <script src="/bevasarlo-kosar/kosar_szamlalo.js"></script>
-    <script src="/scriptek/atiranyitas.js"></script>
-    <script src="/menu-rendszer/script.js"></script>
+    <!--Ezek mind a kosárhoz tartoznak-->
+    <script src="../../csapatos_munka/bevasarlo-kosar/kosar_szamlalo.js"></script>
+    <script src="../../csapatos_munka/bevasarlo-kosar/Adatok.js"></script>
+    <script src="../../csapatos_munka/bevasarlo-kosar/kosar.js"></script>
+    <script src="../../csapatos_munka/menu-rendszer/script.js"></script>
+    <!--KOSÁR VÉGE-->
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -200,12 +45,6 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
-    ></script>
-
-    <script src="/scriptek/blog_hirek.js"></script>
-    <script
-      type="module"
-      src="/scriptek/blog_chat_rendszer.js"
     ></script>
   </body>
 </html>
