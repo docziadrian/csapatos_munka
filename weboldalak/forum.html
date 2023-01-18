@@ -3,9 +3,9 @@
   <head>
     <link
       rel="stylesheet"
-      href="../../fas_oldal_teszt/styles/blog_uzenetek.css"
+      href="../../csapatos_munka/styles/blog_uzenetek.css"
     />
-    <link rel="stylesheet" href="../../fas_oldal_teszt/styles/hirek.css" />
+    <link rel="stylesheet" href="../../csapatos_munka/styles/hirek.css" />
     <title>Faanyagok</title>
   </head>
   <body onload="osszesites()">
@@ -16,33 +16,39 @@
     <div class="text-center">
       <h3 class="p">Blog</h3>
     </div>
-
-    <div class="m-5">
-      <h2>Üzemeltetők: <span id="nevek">dadrian bmartin abeni</span></h2>
-    </div>
-    <div id="bodyContent"></div>
-
-    <div class="mx-2 w-50 mb-5">
-      <div class="w-75 row border border-secondary rounded">
-        <h5 class="mt-5">Hozzá szeretnél tenni valamit a bloghoz?</h5>
-        <p>Neved: <input type="text" id="name" /></p>
-        <p>
-          Üzenet:
-          <input type="text" id="message" oninput="karakterek()" />
-          <span id="max_uzenet"></span>
-        </p>
-        <span class="col-md-6 text-center">
-          <button
-            class="gomb btn btn-lg border border-secondary"
-            id="submit"
-            type="submit"
-          >
-            Küldés
-          </button>
-        </span>
+    <div class="flex-container">
+      <div class="mt-5 text-center">
+        <h2>Üdvözöllek a fórum szobában!</h2>
       </div>
-    </div>
 
+      <div class="flex p-3 text-center">
+        <input
+          width="me-auto"
+          type="text"
+          size="18"
+          id="name"
+          placeholder="Neved"
+        />
+        <input
+          width="me-auto"
+          type="text"
+          size="50"
+          id="message"
+          oninput="karakterek()"
+          placeholder="Üzenet"
+        />
+        <span id="max_uzenet"></span>
+        <button class="gomb" id="submit" type="submit">Küldés</button>
+      </div>
+
+      <div class="row row-cols-3 text-center mb-2 forum-info">
+        <div class="col">Név</div>
+        <div class="col uzenet2">Üzenet</div>
+        <div class="col datum2">Dátum</div>
+      </div>
+
+      <div id="bodyContent"></div>
+    </div>
     <!-- Modal -->
     <div class="modal-box">
       <div
@@ -110,7 +116,7 @@
                 width="100%"
                 height="100%"
                 id="hir_video"
-                src="../../fas_oldal_teszt/Pictures/videok/dol_a_fa.mp4"
+                src="../../csapatos_munka/Pictures/videok/dol_a_fa.mp4"
               ></video>
             </div>
           </div>
@@ -182,9 +188,9 @@
       }
     </script>
 
-    <script src="../../fas_oldal_teszt/bevasarlo-kosar/kosar_szamlalo.js"></script>
-    <script src="../../fas_oldal_teszt/scriptek/atiranyitas.js"></script>
-    <script src="../../fas_oldal_teszt/menu-rendszer/script.js"></script>
+    <script src="../../csapatos_munka/bevasarlo-kosar/kosar_szamlalo.js"></script>
+    <script src="../../csapatos_munka/scriptek/atiranyitas.js"></script>
+    <script src="../../csapatos_munka/menu-rendszer/script.js"></script>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -202,10 +208,10 @@
       crossorigin="anonymous"
     ></script>
 
-    <script src="../../fas_oldal_teszt/scriptek/blog_hirek.js"></script>
+    <script src="../../csapatos_munka/scriptek/blog_hirek.js"></script>
     <script
       type="module"
-      src="../../fas_oldal_teszt/scriptek/blog_chat_rendszer.js"
+      src="../../csapatos_munka/scriptek/blog_chat_rendszer.js"
     ></script>
   </body>
 </html>
