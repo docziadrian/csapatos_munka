@@ -8,8 +8,17 @@
       <!-- Deklarálva van a navbar.html -ben -->
     </nav>
 
-    <div class="text-center">
-      <h3 class="p">Ezt majd ti megcsináljátok</h3>
+    <div class="card" style="width: 15rem; height: 25rem;">
+      <img class="card-img-top" src="/Pictures/faanyagok/Fadeszka_Bükkfa.png" alt="Card image cap">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+        <div class="container">
+          <h3></h3>
+          <a href="#"  data-toggle="popover" data-img="http://placehold.it/400x200" title="Popover Header" ><img src="/Pictures/question-circle.svg" width="50px" height="50px" alt=""></a>
+        </div>
+      </div>
     </div>
 
     <script src="/bevasarlo-kosar/kosar_szamlalo.js"></script>
@@ -30,5 +39,16 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script>$(document).ready(function(){
+      $('[data-toggle="popover"]').popover({
+             //trigger: 'focus',
+         trigger: 'hover',
+             html: true,
+             content: function () {
+           return '<img class="img-fluid" src="'+$(this).data('img') + '" />';
+             },
+             title: 'Toolbox'
+       }) 
+   });</script>
   </body>
 </html>
