@@ -1,3 +1,4 @@
+let valtoztatva = false
 let label = document.getElementById("label");
 let BevasarloKocsi = document.getElementById("shopping-cart");
 
@@ -90,7 +91,7 @@ let kivonas = (id) => {
 let update = (id) => {
   let search = kosar.find((x) => x.id === id);
   osszesites2();
-  TotalAmount();
+  TotalAmount(valtoztatva=false);
 };
 
 let kosarTorles = (id) => {
@@ -98,20 +99,23 @@ let kosarTorles = (id) => {
   kosar = kosar.filter((x) => x.id !== kivalasztottTargy.id);
   osszesites2();
   generateCartItems();
-  TotalAmount();
+  TotalAmount(valtoztatva=false);
   localStorage.setItem("adat", JSON.stringify(kosar));
 };
 let ide = "vasarlas";
 
-let TotalAmount = () => {
+let TotalAmount = (valtoztatva) => {
   if (kosar.length !== 0) {
-    let osszesen = kosar
-      .map((x) => {
-        let { id, item } = x;
-        let filterData = targyakAdata.find((x) => x.id === id);
-        return filterData.price * item;
-      })
-      .reduce((x, y) => x + y, 0);
+
+    
+   let osszesen = kosar
+    .map((x) => {
+      let { id, item } = x;
+      let filterData = targyakAdata.find((x) => x.id === id);
+      return filterData.price * item;
+    })
+    .reduce((x, y) => x + y, 0);
+
     return (label.innerHTML = `
        <div class="text-center">
           <h3 class="p">Házhozszállítás: 1000FT</h3>
@@ -119,7 +123,7 @@ let TotalAmount = () => {
           <br>
               <div class="text-center">
               <h5><input type="checkbox" id="aszf"> Elfogadom az <span>ászf </span>feltételeket <span id="jel"></span></h5>
-              <h5><input id="garancia" type="checkbox"> +1 év garanciát kérek (30.000FT)</h5>
+              <h5><input onclick="garancia()" id="garancia" type="checkbox"> +1 év garanciát kérek (30.000FT)</h5>
               </div>
         </div>
 
@@ -159,7 +163,7 @@ let TotalAmount = () => {
   } else return;
 };
 
-TotalAmount();
+TotalAmount(valtoztatva=false);
 
 let clearCart = () => {
   basket = [];
@@ -190,3 +194,34 @@ function rendeles_gomb_lenyomva() {
     $("#vasarlasModal").modal("show");
   }
 }
+
+
+function garancia(){
+  let osszesen = kosar
+  .map((x) => {
+    let { id, item } = x;
+    let filterData = targyakAdata.find((x) => x.id === id);
+    return filterData.price * item + 30000;
+  })
+  .reduce((x, y) => x + y, 0);
+  let valtoztatva = true;
+  
+  alert(osszesen);
+  return (label.innerHTML = `
+       <div class="text-center">
+          <h3 class="p">Házhozszállítás: 1000FT</h3>
+          <h3 class="p" id="osszesen">Összesen: ${osszesen}</h3>
+          <br>
+              <div class="text-center">
+              <h5><input type="checkbox" id="aszf"> Elfogadom az <span>ászf </span>feltételeket <span id="jel"></span></h5>
+              <h5><input onclick="garancia()" id="garancia" type="checkbox"> +1 év garanciát kérek (30.000FT)</h5>
+              </div>
+        </div>
+
+        <div class="text-center">
+            <button id="tovabb" class="btn btn-success" onclick="rendeles_gomb_lenyomva()">Tovább a rendeléshez</button>
+        </div>
+        <br>
+      `);}
+
+// Hivja meg megint de ellenorzes nelkul:
