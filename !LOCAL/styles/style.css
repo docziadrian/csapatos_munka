@@ -274,9 +274,8 @@ h1 {
 }
 
 .popovergomb {
-  position: absolute;
-  margin-left: 140px;
-  bottom: 1px;
+  margin-left:8rem;
+  margin-top:-3.5rem;
 }
 
 .keret {
@@ -312,4 +311,9 @@ a {
 
 a > svg:hover {
   border: 1px solid rgba(128, 128, 128, 0.503);
+}
+
+.col{
+  margin-left:5rem;
+  margin-top:5rem;
 }
