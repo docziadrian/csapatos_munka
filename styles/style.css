@@ -274,7 +274,11 @@ h1 {
 }
 
 .popovergomb{
-  position: absolute;
-  margin-left: 140px;
-  bottom: 1px;
+  margin-left:8rem;
+  margin-top:-3.5rem;
+}
+
+.col{
+  margin-left:5rem;
+  margin-top:5rem;
 }
