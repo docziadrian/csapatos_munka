@@ -33,6 +33,7 @@ h1 {
   font-family: "Sono", sans-serif;
   display: flex;
   align-items: center;
+  z-index:2;
 }
 
 .kosar {
@@ -279,6 +280,10 @@ h1 {
 }
 
 .col{
+
   margin-left:5rem;
   margin-top:5rem;
+}
+.row{
+  z-index:1;
 }
