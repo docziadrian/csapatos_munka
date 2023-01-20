@@ -125,6 +125,9 @@ let TotalAmount = (valtoztatva) => {
               <h5><input type="checkbox" id="aszf"> Elfogadom az <span>ászf </span>feltételeket <span id="jel"></span></h5>
               <h5><input onclick="garancia()" id="garancia" type="checkbox"> +1 év garanciát kérek (30.000FT)</h5>
               </div>
+
+
+
         </div>
 
         <div class="text-center">
@@ -196,6 +199,8 @@ function rendeles_gomb_lenyomva() {
 }
 
 
+
+
 function garancia(){
   let osszesen = kosar
   .map((x) => {
@@ -206,7 +211,7 @@ function garancia(){
   .reduce((x, y) => x + y, 0);
   let valtoztatva = true;
   
-  alert(osszesen);
+  
   return (label.innerHTML = `
        <div class="text-center">
           <h3 class="p">Házhozszállítás: 1000FT</h3>
@@ -222,6 +227,16 @@ function garancia(){
             <button id="tovabb" class="btn btn-success" onclick="rendeles_gomb_lenyomva()">Tovább a rendeléshez</button>
         </div>
         <br>
+
+        <script>
+          var pipalva = document.getElementById("garancia").checked;
+          alert(pipalva)
+        </script>
       `);}
+    
+
+    
+    
+    
 
 // Hivja meg megint de ellenorzes nelkul:

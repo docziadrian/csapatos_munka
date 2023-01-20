@@ -190,3 +190,5 @@ function rendeles_gomb_lenyomva() {
     $("#vasarlasModal").modal("show");
   }
 }
+
+
