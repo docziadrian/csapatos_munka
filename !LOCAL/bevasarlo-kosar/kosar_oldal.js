@@ -1,4 +1,4 @@
-let valtoztatva = false
+let valtoztatva = false;
 let label = document.getElementById("label");
 let BevasarloKocsi = document.getElementById("shopping-cart");
 
@@ -91,7 +91,7 @@ let kivonas = (id) => {
 let update = (id) => {
   let search = kosar.find((x) => x.id === id);
   osszesites2();
-  TotalAmount(valtoztatva=false);
+  TotalAmount((valtoztatva = false));
 };
 
 let kosarTorles = (id) => {
@@ -99,27 +99,25 @@ let kosarTorles = (id) => {
   kosar = kosar.filter((x) => x.id !== kivalasztottTargy.id);
   osszesites2();
   generateCartItems();
-  TotalAmount(valtoztatva=false);
+  TotalAmount((valtoztatva = false));
   localStorage.setItem("adat", JSON.stringify(kosar));
 };
 let ide = "vasarlas";
 
 let TotalAmount = (valtoztatva) => {
   if (kosar.length !== 0) {
-
-    
-   let osszesen = kosar
-    .map((x) => {
-      let { id, item } = x;
-      let filterData = targyakAdata.find((x) => x.id === id);
-      return filterData.price * item;
-    })
-    .reduce((x, y) => x + y, 0);
+    let osszesen = kosar
+      .map((x) => {
+        let { id, item } = x;
+        let filterData = targyakAdata.find((x) => x.id === id);
+        return filterData.price * item;
+      })
+      .reduce((x, y) => x + y, 0);
 
     return (label.innerHTML = `
        <div class="text-center">
           <h3 class="p">Házhozszállítás: 1000FT</h3>
-          <h3 class="p" id="osszesen">Összesen: ${osszesen}</h3>
+          <h3 class="p" id="osszesen">Összesen: ${osszesen} FT</h3>
           <br>
               <div class="text-center">
               <h5><input type="checkbox" id="aszf"> Elfogadom az <span>ászf </span>feltételeket <span id="jel"></span></h5>
@@ -146,7 +144,7 @@ let TotalAmount = (valtoztatva) => {
                 <div class="modal-body">
                                 <div id="wrapper">
                                   <div id="info">
-                                    <img id="kep_final" src="/csapatos_munka/!LOCAL/Pictures/Vodrok/vodorsarga.png">
+                                    <img id="kep_final" src="/csapatos_munka/!LOCAL/Pictures/ikon.png">
                                     <p>Festékek</p>
                                       <h3 class="mb-5" id="osszesen2">${osszesen} FT</h3>
                                       <h4> <a href="https://developer.paypal.com/home/" target="_blank">? PayPal Sandbox módban ? </a></h4>
@@ -166,7 +164,7 @@ let TotalAmount = (valtoztatva) => {
   } else return;
 };
 
-TotalAmount(valtoztatva=false);
+TotalAmount((valtoztatva = false));
 
 let clearCart = () => {
   basket = [];
@@ -198,45 +196,31 @@ function rendeles_gomb_lenyomva() {
   }
 }
 
+function garancia() {
+  if (document.getElementById("garancia").checked) {
+    let osszesen = kosar
+      .map((x) => {
+        let { id, item } = x;
+        let filterData = targyakAdata.find((x) => x.id === id);
+        return filterData.price * item + 30000;
+      })
+      .reduce((x, y) => x + y, 0);
+    document.querySelector("#osszesen2").innerHTML = `${osszesen} FT`;
+    document.querySelector(
+      "#osszesen"
+    ).innerHTML = `Összesen: ${osszesen} FT (+30k garancia)`;
+  } else {
+    let osszesen = kosar
+      .map((x) => {
+        let { id, item } = x;
+        let filterData = targyakAdata.find((x) => x.id === id);
+        return filterData.price * item;
+      })
+      .reduce((x, y) => x + y, 0);
 
-
-
-function garancia(){
-  let osszesen = kosar
-  .map((x) => {
-    let { id, item } = x;
-    let filterData = targyakAdata.find((x) => x.id === id);
-    return filterData.price * item + 30000;
-  })
-  .reduce((x, y) => x + y, 0);
-  let valtoztatva = true;
-  
-  
-  return (label.innerHTML = `
-       <div class="text-center">
-          <h3 class="p">Házhozszállítás: 1000FT</h3>
-          <h3 class="p" id="osszesen">Összesen: ${osszesen}</h3>
-          <br>
-              <div class="text-center">
-              <h5><input type="checkbox" id="aszf"> Elfogadom az <span>ászf </span>feltételeket <span id="jel"></span></h5>
-              <h5><input onclick="garancia()" id="garancia" type="checkbox"> +1 év garanciát kérek (30.000FT)</h5>
-              </div>
-        </div>
-
-        <div class="text-center">
-            <button id="tovabb" class="btn btn-success" onclick="rendeles_gomb_lenyomva()">Tovább a rendeléshez</button>
-        </div>
-        <br>
-
-        <script>
-          var pipalva = document.getElementById("garancia").checked;
-          alert(pipalva)
-        </script>
-      `);}
-    
-
-    
-    
-    
+    document.querySelector("#osszesen2").innerHTML = `${osszesen} FT`;
+    document.querySelector("#osszesen").innerHTML = `Összesen: ${osszesen} FT`;
+  }
+}
 
 // Hivja meg megint de ellenorzes nelkul:

@@ -33,7 +33,7 @@ h1 {
   font-family: "Sono", sans-serif;
   display: flex;
   align-items: center;
-  z-index:2;
+  z-index: 2;
 }
 
 .kosar {
@@ -274,16 +274,29 @@ h1 {
   }
 }
 
-.popovergomb{
-  margin-left:8rem;
-  margin-top:-3.5rem;
+.popovergomb {
+  margin-left: 8rem;
+  margin-top: -3.5rem;
 }
 
-.col{
-
-  margin-left:5rem;
-  margin-top:5rem;
+.keret > .col {
+  margin-left: 5rem;
+  margin-top: 5rem;
 }
-.row{
-  z-index:1;
+.row {
+  z-index: 1;
+}
+
+.info > li {
+  list-style: none;
+}
+
+.info > li > a {
+  text-decoration: none;
+  cursor: zoom-in;
+}
+
+.info > li > a > svg:hover {
+  border: 1px solid gray !important;
+  border-width: 25% !important;
 }
