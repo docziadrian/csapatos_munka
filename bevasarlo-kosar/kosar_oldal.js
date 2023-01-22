@@ -202,7 +202,7 @@ function garancia() {
       .map((x) => {
         let { id, item } = x;
         let filterData = targyakAdata.find((x) => x.id === id);
-        return filterData.price * item + 30000;
+        return filterData.price * item + 3000;
       })
       .reduce((x, y) => x + y, 0);
     document.querySelector("#osszesen2").innerHTML = `${osszesen} FT`;
