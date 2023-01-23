@@ -1,35 +1,18 @@
 <!DOCTYPE html>
 <html lang="hu">
   <head>
-    <title>Főoldal</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
-    />
+    <title>Faanyagok</title>
   </head>
   <body onload="osszesites()">
-    <!-- Azért kell, hogy a kosárban lévő termékeknek
-a számát kiírja a navbaron. -->
-    <nav class="navbar navbar-expand-md bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark position-fixed w-100">
       <!-- Deklarálva van a navbar.html -ben -->
     </nav>
 
-    <section>
-      <div class="container text-center">
-        <div class="shop" id="shop">
-          <!-- DEKLARÁLVA A KOSAR.JS -ben!
-                Azért JavaScriptben, mert könnyebb a lekérdezés,
-                amikor a local storage -ből id szerint lekérdezzük. -->
-        </div>
-      </div>
-    </section>
+    <span class="h1">üdv</span>
 
-    <!--Ezek mind a kosárhoz tartoznak-->
     <script src="../../csapatos_munka/bevasarlo-kosar/kosar_szamlalo.js"></script>
-    <script src="../../csapatos_munka/bevasarlo-kosar/Adatok.js"></script>
-    <script src="../../csapatos_munka/bevasarlo-kosar/kosar.js"></script>
     <script src="../../csapatos_munka/menu-rendszer/script.js"></script>
-    <!--KOSÁR VÉGE-->
+    <script src="../../csapatos_munka/bevasarlo-kosar/kosar.js"></script>
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
