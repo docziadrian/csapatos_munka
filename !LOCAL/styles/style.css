@@ -300,3 +300,11 @@ h1 {
   border: 1px solid gray !important;
   border-width: 25% !important;
 }
+
+.card-body {
+  text-align: left !important;
+}
+
+.kerdojel {
+  margin-left: -1.8em;
+}

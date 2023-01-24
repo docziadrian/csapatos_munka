@@ -4,21 +4,25 @@
     <title>Faanyagok</title>
   </head>
   <body onload="osszesites()">
-    <nav class="navbar navbar-expand-lg bg-dark position-fixed w-100">
+    <nav class="navbar navbar-expand-md bg-dark">
       <!-- Deklarálva van a navbar.html -ben -->
     </nav>
 
-<div id="faanyagok"></div>
+    <section>
+      <div class="container text-left">
+        <div class="shop" id="faanyagok">
+          <!-- DEKLARÁLVA A KOSAR.JS -ben!
+                Azért JavaScriptben, mert könnyebb a lekérdezés,
+                amikor a local storage -ből id szerint lekérdezzük. -->
+        </div>
+      </div>
+    </section>
 
-
-
-
-<script src="/csapatos_munka/!LOCAL/bevasarlo-kosar/Adatokfaanyag.js"></script>
+    <script src="/csapatos_munka/!LOCAL/bevasarlo-kosar/Adatokfaanyag.js"></script>
     <script src="/csapatos_munka/!LOCAL/bevasarlo-kosar/faanyagok.js"></script>
-    
+
     <script src="/csapatos_munka/!LOCAL/bevasarlo-kosar/kosar_szamlalo.js"></script>
     <script src="/csapatos_munka/!LOCAL/menu-rendszer/script.js"></script>
-    
 
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
