@@ -92,6 +92,7 @@ let update = (id) => {
   let search = kosar.find((x) => x.id === id);
   osszesites2();
   TotalAmount((valtoztatva = false));
+
 };
 
 let kosarTorles = (id) => {
@@ -115,6 +116,7 @@ let TotalAmount = (valtoztatva) => {
       .reduce((x, y) => x + y, 0);
 
     return (label.innerHTML = `
+    
        <div class="text-center">
           <h3 class="p">Házhozszállítás: 1000FT</h3>
           <h3 class="p" id="osszesen">Összesen: ${osszesen} FT</h3>
@@ -160,6 +162,9 @@ let TotalAmount = (valtoztatva) => {
               </div>
             </div>
           </div>
+
+          
+
       `);
   } else return;
 };

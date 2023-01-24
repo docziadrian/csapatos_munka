@@ -40,6 +40,7 @@ let generateShop = () => {
 };
 
 generateShop();
+generateFaanyagok();
 
 let hozzaadas = (id, hidden) => {
   console.log(hidden.id);
