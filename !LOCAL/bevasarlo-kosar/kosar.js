@@ -29,7 +29,6 @@ let generateShop = () => {
                         </div>
                         <div class="x-icon">x</div>
                     </div>
-
                 </div>
                 
         </div>
@@ -40,7 +39,6 @@ let generateShop = () => {
 };
 
 generateShop();
-generateFaanyagok();
 
 let hozzaadas = (id, hidden) => {
   console.log(hidden.id);

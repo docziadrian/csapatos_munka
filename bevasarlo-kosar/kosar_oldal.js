@@ -14,7 +14,11 @@ let generateCartItems = () => {
     return (BevasarloKocsi.innerHTML = kosar
       .map((x) => {
         let { id, item } = x;
-        let search = targyakAdata.find((y) => y.id === id) || [];
+        let search =
+          targyakAdata2.find((y) => y.id === id) ||
+          targyakAdata.find((y) => y.id === id) ||
+          targyakAdata3.find((y) => y.id === id) ||
+          [];
         return `
             <div class="cart-item festek">
             <img width="100" src=${search.img} alt="" />
@@ -49,7 +53,7 @@ let generateCartItems = () => {
     BevasarloKocsi.innerHTML = ``;
     label.innerHTML = `
         <h2 class="text-center ml-5">A kosarad üres.</h2>
-        <a href="/weboldalak/festekek.html"> <button type="button" class="btn btn-primary">Vásárolok</button> </a>
+        <a href="/csapatos_munka/weboldalak/festekek.html"> <button type="button" class="btn btn-primary">Vásárolok</button> </a>
         `;
   }
 };
@@ -109,12 +113,16 @@ let TotalAmount = (valtoztatva) => {
     let osszesen = kosar
       .map((x) => {
         let { id, item } = x;
-        let filterData = targyakAdata.find((x) => x.id === id);
+        let filterData =
+          targyakAdata2.find((x) => x.id === id) ||
+          targyakAdata3.find((x) => x.id === id) ||
+          targyakAdata.find((x) => x.id === id);
         return filterData.price * item;
       })
       .reduce((x, y) => x + y, 0);
 
     return (label.innerHTML = `
+    
        <div class="text-center">
           <h3 class="p">Házhozszállítás: 1000FT</h3>
           <h3 class="p" id="osszesen">Összesen: ${osszesen} FT</h3>
@@ -144,7 +152,7 @@ let TotalAmount = (valtoztatva) => {
                 <div class="modal-body">
                                 <div id="wrapper">
                                   <div id="info">
-                                    <img id="kep_final" src="../../csapatos_munka/Pictures/ikon.png">
+                                    <img id="kep_final" src="/csapatos_munka/Pictures/ikon.png">
                                     <p>Festékek</p>
                                       <h3 class="mb-5" id="osszesen2">${osszesen} FT</h3>
                                       <h4> <a href="https://developer.paypal.com/home/" target="_blank">? PayPal Sandbox módban ? </a></h4>
@@ -160,6 +168,9 @@ let TotalAmount = (valtoztatva) => {
               </div>
             </div>
           </div>
+
+          
+
       `);
   } else return;
 };
@@ -201,7 +212,10 @@ function garancia() {
     let osszesen = kosar
       .map((x) => {
         let { id, item } = x;
-        let filterData = targyakAdata.find((x) => x.id === id);
+        let filterData =
+          targyakAdata2.find((x) => x.id === id) ||
+          targyakAdata3.find((x) => x.id === id) ||
+          targyakAdata.find((x) => x.id === id);
         return filterData.price * item + 3000;
       })
       .reduce((x, y) => x + y, 0);
@@ -213,7 +227,10 @@ function garancia() {
     let osszesen = kosar
       .map((x) => {
         let { id, item } = x;
-        let filterData = targyakAdata.find((x) => x.id === id);
+        let filterData =
+          targyakAdata2.find((x) => x.id === id) ||
+          targyakAdata3.find((x) => x.id === id) ||
+          targyakAdata.find((x) => x.id === id);
         return filterData.price * item;
       })
       .reduce((x, y) => x + y, 0);

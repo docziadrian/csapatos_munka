@@ -129,20 +129,30 @@ h1 {
   justify-content: center;
 }
 
+.shopEszkozok {
+  display: grid;
+  grid-template-columns: repeat(3, 223px);
+  gap: 30px;
+  justify-content: center;
+}
+
 @media (max-width: 1000px) {
-  .shop {
+  .shop,
+  .shopEszkozok {
     grid-template-columns: repeat(3, 223px);
   }
 }
 
 @media (max-width: 760px) {
-  .shop {
+  .shop,
+  .shopEszkozok {
     grid-template-columns: repeat(2, 223px);
   }
 }
 
 @media (max-width: 500px) {
-  .shop {
+  .shop,
+  .shopEszkozok {
     grid-template-columns: repeat(1, 223px);
   }
 }
@@ -307,4 +317,84 @@ h1 {
 
 .kerdojel {
   margin-left: -1.8em;
+}
+
+.bal {
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+.ketto {
+  margin-top: 50px;
+  font-weight: bold;
+}
+
+.margo {
+  margin-top: 80px !important;
+}
+
+.harom {
+  margin-top: 8em !important;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+.slider {
+  background: rgba(255, 255, 255, 0);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 650px;
+}
+.slider::before,
+.slider::after {
+  background: rgba(255, 0, 0, 0);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(150px * 14);
+}
+.slider .slide {
+  height: 100px;
+  width: 250px;
+}
+
+.slider {
+  margin-top: 85px;
+}
+
+@media (max-width: 1000px) {
+  .slide,
+  .slider {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+}
+
+@media (max-width: 500px) {
 }

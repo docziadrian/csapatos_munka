@@ -29,7 +29,6 @@ let generateShop = () => {
                         </div>
                         <div class="x-icon">x</div>
                     </div>
-
                 </div>
                 
         </div>

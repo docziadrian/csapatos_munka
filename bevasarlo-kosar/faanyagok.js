@@ -46,7 +46,7 @@ let generateShop = () => {
                     data-content="${leiras}"
                     title="Információ"
                     ><img
-                      src="/csapatos_munka/!LOCAL/Pictures/question-circle.svg"
+                      src="/csapatos_munka/Pictures/question-circle.svg"
                       width="45px"
                       height="40px"
                       alt="Kérdőjel"

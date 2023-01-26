@@ -1,4 +1,4 @@
-let shop = document.getElementById("faanyagok");
+let shop = document.getElementById("eszkozok");
 
 let kosar = JSON.parse(localStorage.getItem("adat")) || [];
 /*A local storage -ből előhívja az adatokat, ha nincs semmi a
@@ -7,59 +7,29 @@ local storage -ben, akkor egy az üres storage -et hívja meg.*/
 let generateShop = () => {
   //Array function
 
-  return (shop.innerHTML = targyakAdata2
+  return (shop.innerHTML = targyakAdata3
     .map((x) => {
-      let { id, name, price, img, img_siker, leiras, hidden } = x;
+      let { id, name, price, img, img_siker, hidden } = x;
       let search = kosar.find((x) => x.id === id) || [];
       return `
-      <div id=termek-id-${id} class="item">
-      <img class="w-100" src=${img} alt="">
-      <div class="card" style="width: auto; height: auto">
-      <div class="card-body">
-      
-              <h5 class="card-title">${name}</h5>
-              <p class="card-text">Ár: ${price} Ft/m3</p>
-              
-
-
-
-              <div class="text-center" id="${hidden}">
-                <img class="w-75" src=${img_siker} />
-              </div>
-              
-
-
-              <div class="">
-              <button onclick="hozzaadas(${id}, ${hidden})" type="button" class="vasarlas btn btn-primary">Vásárlás</button>
-              <div id=${id} class="mennyiseg_style">
-              ${search.item === undefined ? 0 : search.item}
-              </div>
-              <div class="x-icon">x</div>
-          </div>              
-              <div class="d-flex">
-              <div class="popovergomb">
-                <div class="mt-3 kerdojel">
-                  <h3></h3>
-                  <a
-                    href="#"
-                    data-toggle="popover"
-                    data-content="${leiras}"
-                    title="Információ"
-                    ><img
-                      src="/csapatos_munka/!LOCAL/Pictures/question-circle.svg"
-                      width="45px"
-                      height="40px"
-                      alt="Kérdőjel"
-                  /></a>
+        <div id=termek-id-${id} class="festek item">
+                <img class="w-100" src=${img} alt="">
+                <div id="${hidden}">
+                    <img class="w-75" src=${img_siker} />
                 </div>
-              </div>
-            </div>
-            </div>
-
-      </div>
-      
-</div>
-</div>
+                <p>${name}</p>
+                    <p><span class="termek-ar">Ár:</span> ${price}FT</p>
+                    <div class="d-flex justify-content-center">
+                        <button onclick="hozzaadas(${id}, ${hidden})" type="button" class="vasarlas btn btn-primary">Vásárlás</button>
+                        <div id=${id} class="mennyiseg_style">
+                        ${search.item === undefined ? 0 : search.item}
+                        </div>
+                        <div class="x-icon">x</div>
+                    </div>
+                </div>
+                
+        </div>
+    </div>
 `;
     })
     .join(""));
