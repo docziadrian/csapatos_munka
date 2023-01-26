@@ -398,3 +398,11 @@ h1 {
 
 @media (max-width: 500px) {
 }
+
+.container2 {
+  width: 80vw;
+  margin: 0 auto;
+  padding-top: 40;
+  text-align: center;
+  line-height: 25px;
+}
