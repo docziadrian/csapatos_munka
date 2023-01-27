@@ -1,0 +1,68 @@
+p {
+  word-wrap: break-word;
+}
+
+.btn:hover {
+  background-color: wheat !important;
+  color: rebeccapurple;
+}
+
+#adminID {
+  color: rgb(141, 45, 45);
+}
+
+.m-5 {
+  background-color: linear-gradient(to left, #000000 0%, #666699 100%);
+}
+
+.ember {
+  background: linear-gradient(to left, #000000 2%, #252525 99%);
+}
+
+.flex-container {
+  background-color: rgb(94, 92, 92);
+}
+
+.szoveg,
+.uzenet {
+  color: rgba(255, 255, 255, 0.601) !important;
+  justify-content: left !important;
+  text-align: left !important;
+}
+
+#nincs {
+  color: rgb(224, 224, 224);
+}
+.datum {
+  color: rgb(207, 207, 207) !important;
+  justify-content: right !important;
+  text-align: right !important;
+}
+
+body {
+  width: 99% !important;
+}
+
+.p {
+  background-color: rebeccapurple !important;
+}
+
+.forum-info {
+  color: beige;
+  font-weight: bold;
+}
+
+.uzenet2 {
+  justify-content: left !important;
+  text-align: left !important;
+}
+
+.datum2 {
+  justify-content: right !important;
+  text-align: right !important;
+}
+
+body {
+  background-image: none !important;
+  background-color: rgba(0, 0, 0, 0.652) !important;
+}

@@ -1,0 +1,29 @@
+#kep_final {
+  width: 5%;
+}
+
+#wrapper,
+.modal-body,
+.modal-footer {
+  background-color: rgb(228, 217, 217);
+}
+
+#month,
+#year {
+  font-size: 18px;
+  width: 50px;
+  height: 25px;
+}
+
+#vasarlas {
+  margin-top: -50px;
+}
+
+#cvc {
+  width: 35px;
+  height: 30px;
+}
+
+#terulet {
+  width: 61px;
+}
