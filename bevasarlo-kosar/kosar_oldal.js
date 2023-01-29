@@ -28,7 +28,7 @@ let generateCartItems = () => {
                     <p>${search.name}</p>
                     <p class="cart-item-price fs-5 fw-b">${
                       search.price
-                    } FT / db</p>
+                    } FT / liter</p>
                   </h4>
                   
               </div>
@@ -128,7 +128,7 @@ let TotalAmount = (valtoztatva) => {
           <h3 class="p" id="osszesen">Összesen: ${osszesen} FT</h3>
           <br>
               <div class="text-center">
-              <h5><input type="checkbox" id="aszf"> Elfogadom az <span>ászf </span>feltételeket <span id="jel"></span></h5>
+              <h5><input type="checkbox" id="aszf"> Elfogadom az <span id="aszf" onclick="aszf()">ászf </span>feltételeket <span id="jel"></span></h5>
               <h5><input onclick="garancia()" id="garancia" type="checkbox"> +1 év garanciát kérek (30.000FT)</h5>
               </div>
 
@@ -168,6 +168,16 @@ let TotalAmount = (valtoztatva) => {
               </div>
             </div>
           </div>
+
+
+
+
+
+
+
+
+
+
 
           
 
@@ -240,4 +250,10 @@ function garancia() {
   }
 }
 
+function aszf() {
+  $("#exampleModal").modal("show");
+}
+function bezar() {
+  $("#exampleModal").modal("hide");
+}
 // Hivja meg megint de ellenorzes nelkul:

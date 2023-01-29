@@ -406,3 +406,25 @@ h1 {
   text-align: center;
   line-height: 25px;
 }
+
+.kep {
+  border-radius: 10%;
+}
+
+.keret {
+  background-color: rgb(255, 255, 255);
+  height: 45rem;
+}
+
+h5 > svg {
+  margin-right: 10px;
+}
+
+.keret > p {
+  height: 20rem !important;
+}
+
+#aszf {
+  cursor: pointer;
+  color: rgb(133, 87, 13);
+}
