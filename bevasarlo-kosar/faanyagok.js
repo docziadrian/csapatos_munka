@@ -9,11 +9,11 @@ let generateShop = () => {
 
   return (shop.innerHTML = targyakAdata2
     .map((x) => {
-      let { id, name, price, img, img_siker, leiras, hidden } = x;
+      let { id, name, price, img, megjelenito_img, img_siker, leiras, hidden } = x;
       let search = kosar.find((x) => x.id === id) || [];
       return `
       <div id=termek-id-${id} class="item">
-      <img class="w-100" src=${img} alt="">
+      <img class="w-100" src=${megjelenito_img} alt="">
       <div class="card" style="width: auto; height: auto">
       <div class="card-body">
       
