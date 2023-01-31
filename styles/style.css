@@ -445,3 +445,7 @@ h5 > svg {
 #mbody {
   background: linear-gradient(to bottom, #aeb6bf59, #eee8d0);
 }
+
+h5 {
+  min-width: 15em;
+}
