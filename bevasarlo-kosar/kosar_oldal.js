@@ -26,9 +26,7 @@ let generateCartItems = () => {
               <div class="title-price-x">
                   <h4 class="title-price">
                     <p>${search.name}</p>
-                    <p class="cart-item-price fs-5 fw-b">${
-                      search.price
-                    } FT / liter</p>
+                    <p class="cart-item-price fs-5 fw-b">${search.price} FT</p>
                   </h4>
                   
               </div>

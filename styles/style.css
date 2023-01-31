@@ -412,7 +412,7 @@ h1 {
 }
 
 .keret {
-  background-color: rgb(255, 255, 255);
+  background-color: linear-gradient(to bottom, #aeb6bf59, #eee8d0);
   height: 45rem;
 }
 
@@ -429,13 +429,19 @@ h5 > svg {
   color: rgb(133, 87, 13);
 }
 
-.cegunk{
+.cegunk {
   width: 100% !important;
-  background-color: white;
 }
 
-
-.nemcim{
+.nemcim {
   font-weight: 100%;
   font-size: x-large;
+}
+
+#modal-text {
+  line-height: 1.5em;
+}
+
+#mbody {
+  background: linear-gradient(to bottom, #aeb6bf59, #eee8d0);
 }
