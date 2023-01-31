@@ -54,3 +54,4 @@ Hirdetes kikapcs text:
 Figyelem! Nemrég kikapcsoltad a hírdetéseket az oldalon! Ha szeretnéd, visszakapcsolhatod őket a bekapcsolom gombbal, vagy ha továbbra sem kívánod érdeklődésedet kimutatni a legfrissebb és legextrémebb hírek iránt, akkor légy unalmas és hagyd kikapcsolva ezt a funkciót! Kikapcs :( Bekapcsolom!
 
 .
+#
