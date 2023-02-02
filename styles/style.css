@@ -274,10 +274,6 @@ h1 {
   color: red;
 }
 
-.content {
-  animation: blinker 10s linear infinite;
-}
-
 @keyframes blinker {
   50% {
     opacity: 0;
@@ -448,4 +444,14 @@ h5 > svg {
 
 h5 {
   min-width: 15em;
+}
+
+.min-vh-100 > a:hover {
+  font-size: none;
+}
+
+.min-vh-100 > a > img:hover,
+.min-vh-100 > img:hover {
+  cursor: pointer;
+  border: 0.1px solid gray !important;
 }

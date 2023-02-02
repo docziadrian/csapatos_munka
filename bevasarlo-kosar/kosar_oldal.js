@@ -224,13 +224,11 @@ function garancia() {
           targyakAdata2.find((x) => x.id === id) ||
           targyakAdata3.find((x) => x.id === id) ||
           targyakAdata.find((x) => x.id === id);
-        return filterData.price * item + 3000;
+        return 30000 + filterData.price * item;
       })
       .reduce((x, y) => x + y, 0);
     document.querySelector("#osszesen2").innerHTML = `${osszesen} FT`;
-    document.querySelector(
-      "#osszesen"
-    ).innerHTML = `Összesen: ${osszesen} FT (+30k garancia)`;
+    document.querySelector("#osszesen").innerHTML = `Összesen: ${osszesen} FT`;
   } else {
     let osszesen = kosar
       .map((x) => {
