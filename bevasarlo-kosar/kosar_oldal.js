@@ -126,7 +126,7 @@ let TotalAmount = (valtoztatva) => {
           <h3 class="p" id="osszesen">Összesen: ${osszesen} FT</h3>
           <br>
               <div class="text-center">
-              <h5><input type="checkbox" id="aszf"> Elfogadom az <span id="aszf" onclick="aszf()">ászf </span>feltételeket <span id="jel"></span></h5>
+              <h5><input type="checkbox" id="aszf"> Elfogadom az <a href="/csapatos_munka/aszf/ASZF.pdf"><span id="aszf">ászf</a> </span>feltételeket <span id="jel"></span></h5>
               <h5><input onclick="garancia()" id="garancia" type="checkbox"> +1 év garanciát kérek (30.000FT)</h5>
               </div>
 
