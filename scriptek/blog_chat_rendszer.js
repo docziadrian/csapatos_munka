@@ -14,12 +14,14 @@ import {
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAPs8dzLoo5wHPptEOsSVqbDtQAAE4Bd6E",
-  authDomain: "fasoldaladmin.firebaseapp.com",
-  projectId: "fasoldaladmin",
-  storageBucket: "fasoldaladmin.appspot.com",
-  messagingSenderId: "450263835936",
-  appId: "1:450263835936:web:6d6f7fe4726252c3236345",
+  apiKey: "AIzaSyAMS4xdjfExbDlpCXwMWMz-RS-Wq5ESb0I",
+  authDomain: "adminmukodo.firebaseapp.com",
+  databaseURL:
+    "https://adminmukodo-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "adminmukodo",
+  storageBucket: "adminmukodo.appspot.com",
+  messagingSenderId: "283809712018",
+  appId: "1:283809712018:web:af723513ea9f8b53b9e34b",
 };
 
 let date = new Date();
