@@ -442,6 +442,10 @@ h5 > svg {
   background: linear-gradient(to bottom, #aeb6bf59, #eee8d0);
 }
 
+a:link{
+  text-decoration: none;
+}
+
 h5 {
   min-width: 15em;
 }
