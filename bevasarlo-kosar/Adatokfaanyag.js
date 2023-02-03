@@ -16,7 +16,8 @@ let targyakAdata2 = [
     name: "Cseresznyefa",
     price: "50000",
     img: "/csapatos_munka/Pictures/faanyagok/Fadeszka.fixed.cseresznye.png",
-    megjelenito_img: "/csapatos_munka/Pictures/faanyagok/Fadeszka_cseresznye.png",
+    megjelenito_img:
+      "/csapatos_munka/Pictures/faanyagok/Fadeszka_cseresznye.png",
     img_siker: "/csapatos_munka/Pictures/succes_hibatlan.gif",
     leiras:
       "Közepesen kemény, ellenálló. Világos,- vörösesbarna színével, erezetével különösen szép felületű fa, ezért a bútorgyártás kedvelt anyaga.",
