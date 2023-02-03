@@ -9,3 +9,4 @@
 # targyakAdata2 -> faanyagok
 
 # targyakAdata3 -> eszközök
+#
