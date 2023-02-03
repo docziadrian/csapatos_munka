@@ -455,3 +455,8 @@ h5 {
   cursor: pointer;
   border: 0.1px solid gray !important;
 }
+
+
+.navbar-toggler-icon {
+  background-color: #a7b69762;
+}

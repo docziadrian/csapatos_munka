@@ -1,3 +1,13 @@
+var x = 1
+var jelenitsd_meg;
+if (x == 0){
+  jelenitsd_meg = "#myModalHirdetes";
+}
+else{
+  jelenitsd_meg = "None";
+}
+
+
 function Kerdes() {
   if (document.getElementById("kerdesBlog").checked) {
     localStorage.setItem("megjelenes", false);
@@ -32,7 +42,7 @@ $(window).on("load", function () {
     szamlalo.length == 40
   ) {
     setTimeout(function () {
-      $("#myModalHirdetes").modal("show");
+      $(jelenitsd_meg).modal("show");
     }, 200);
   }
 
