@@ -59,7 +59,7 @@ let targyakAdata2 = [
     id: "szilva_fa",
     name: "Szilfa",
     price: "120000",
-    img: "/csapatos_munka/Pictures/faanyagok/Fadeszka.fixed.Szilfa.png",
+    img: "/csapatos_munka/Pictures/faanyagok/Fadeszka.fixed.szilfa.png",
     megjelenito_img: "/csapatos_munka/Pictures/faanyagok/Fadeszka_Szilfa.png",
     img_siker: "/csapatos_munka/Pictures/succes_hibatlan.gif",
     leiras:
@@ -70,8 +70,8 @@ let targyakAdata2 = [
     id: "tolgy_fa",
     name: "Tölgyfa",
     price: "15000",
-    img: "/csapatos_munka/Pictures/faanyagok/Fadeszka.fixed.Tölgy.png",
-    megjelenito_img: "/csapatos_munka/Pictures/faanyagok/Fadeszka_Nyírfa.png",
+    img: "/csapatos_munka/Pictures/faanyagok/Fadeszka.fixed.tölgy.png",
+    megjelenito_img: "/csapatos_munka/Pictures/faanyagok/Fadeszka_Tölgyfa.png",
     img_siker: "/csapatos_munka/Pictures/succes_hibatlan.gif",
     leiras: "Legnagyobb tömörséggel rendelkező, kemény fa.",
     hidden: "hidden7",
@@ -80,7 +80,7 @@ let targyakAdata2 = [
     id: "nyir_fa",
     name: "Nyírfa",
     price: "16000",
-    img: "/csapatos_munka/Pictures/faanyagok/Fadeszka.fixed.Nyír.png",
+    img: "/csapatos_munka/Pictures/faanyagok/Fadeszka.fixed.nyír.png",
     megjelenito_img: "/csapatos_munka/Pictures/faanyagok/Fadeszka_Nyírfa.png",
     img_siker: "/csapatos_munka/Pictures/succes_hibatlan.gif",
     leiras:
