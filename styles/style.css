@@ -441,18 +441,21 @@ h5 > svg {
 #mbody {
   background: linear-gradient(to bottom, #aeb6bf59, #eee8d0);
 }
-.fooldalcim{
+.fooldalcim {
   text-align: left;
-  position: fixed; left: 2rem;top: 6rem;
+  position: fixed;
+  left: 2rem;
+  top: 6rem;
 }
-.fooldaljegyzet{
+.fooldaljegyzet {
   text-align: left;
-  position: fixed; left: 2rem;top: 10rem;
+  position: fixed;
+  left: 2rem;
+  top: 10rem;
   margin-right: 60rem;
-  
 }
 
-a:link{
+a:link {
   text-decoration: none;
 }
 
