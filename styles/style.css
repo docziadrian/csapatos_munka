@@ -477,3 +477,15 @@ h5 {
 .navbar-toggler-icon {
   background-color: #a7b69762;
 }
+
+@media (max-width: 979px) {
+  .carousel {
+  width: 100%;
+  height: auto;
+  display: block !important;
+  }
+}
+
+.carousel-item > h4{
+  max-width: 450px !important;
+}
