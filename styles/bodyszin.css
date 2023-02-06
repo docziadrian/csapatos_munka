@@ -1,0 +1,6 @@
+html,
+body,
+.carousel,
+.carousel-item {
+  background-color: rgba(185, 191, 194, 255) !important;
+}
