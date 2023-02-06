@@ -477,3 +477,15 @@ h5 {
 .navbar-toggler-icon {
   background-color: #a7b69762;
 }
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background: #F37A1D;
+ border-top: 3px solid black;
+}
+.fekete{
+  color:black
+}
