@@ -3,6 +3,7 @@
   <head>
     <title>Főoldal</title>
     <link rel="stylesheet" href="/csapatos_munka/styles/bodyszin.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   </head>
   <body onload="osszesites()">
     <nav class="navbar navbar-expand-lg bg-dark position-fixed w-100">
@@ -13,85 +14,108 @@
       <div class="section">Főoldal</div>
     </div>
 
-    <div
-      id="carouselExampleControlsNoTouching"
-      class="mt-5 carousel slide"
-      data-touch="false"
-      data-interval="false"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img
-            src="/csapatos_munka/Pictures/kezdoOldal/Főoldalképe.png"
-            class="d-block w-100"
-            alt="..."
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h1 class="fooldalcim">Fázunk</h1>
-            <h3 class="fooldaljegyzet">
-              A cégünk kiváló minőségű fákkal és festékekkel dolgozik
-              versenyszerű áron!
-            </h3>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="/csapatos_munka/Pictures/kezdoOldal/főoldal_festék.png"
-            class="d-block w-100"
-            alt="..."
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h1 class="fooldalcim">Festékek</h1>
-            <h3 class="fooldaljegyzet">
-              Sok szín választás, élénk, ezek a festékek a miénk!
-            </h3>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="/csapatos_munka/Pictures/kezdoOldal/főoldal_faanyag.png"
-            class="d-block w-100"
-            alt="..."
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h3 class="fooldalcim">Faanyagok</h3>
-            <h3 class="fooldaljegyzet">
-              Gyönyörűk, kemények vagy puhák, ezek a fa tömbök nem nullák!
-            </h3>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img
-            src="/csapatos_munka/Pictures/kezdoOldal/főoldal_szerszám.png"
-            class="d-block w-100"
-            alt="..."
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h1 class="fooldalcim">Szerszámok</h1>
-            <h3 class="fooldaljegyzet">
-              Jó minőség, kitartó, szerszámaink kiválók!
-            </h3>
-          </div>
+<div id="carouselExampleControls" class="pt-5 carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner pt-2">
+    <div class="carousel-item active">
+      <h3 class="m-3 align-baseline">Fázunk!</h3>
+      <h4 class="m-3">A cégünk kiváló minőségű fákkal és festékekkel dolgozik
+        versenyszerű áron!</h4>
+      <img src="/csapatos_munka/Pictures/kezdoOldal/Főoldalképe.png" class="d-block w-100" alt="...">
+      
+    </div>
+    <div class="carousel-item">
+      <h3 class="m-3 align-baseline">Festékek</h3>
+      <h4 class="m-3">Sok szín választás, élénk, ezek a festékek a miénk!</h4>
+
+      <img src="/csapatos_munka/Pictures/kezdoOldal/főoldal_festék.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+
+      <h3 class="m-3 align-baseline">Faanyagok</h3>
+      <h4 class="m-3">Gyönyörűk, kemények vagy puhák, ezek a fa tömbök nem nullák!</h4>
+      <img src="/csapatos_munka/Pictures/kezdoOldal/főoldal_faanyag.png" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+
+      <h3 class="m-3 align-baseline">Szerszámok</h3>
+      <h4 class="m-3">Jó minőség, kitartó, szerszámaink kiválók!</h4>
+      <img src="/csapatos_munka/Pictures/kezdoOldal/főoldal_szerszám.png" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+<footer class="bg-dark text-white">
+  <div class="container ">
+    <div class="row justify-content-between">
+      <div class="col-xl-3 col-lg-4 col-md-6 ">
+        <div>
+          <h4 class="text-center opacity-0">Elérhetőség</h4>
+          <img class="w-25 h-50" src="/csapatos_munka/Pictures/ikon.png" width="0%" height="0%" alt="">
+          <p class="mb-30 footer-desc">Cégünk kíváló minőségű árukat árusít!</p>
         </div>
       </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-target="#carouselExampleControlsNoTouching"
-        data-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-target="#carouselExampleControlsNoTouching"
-        data-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      </button>
-    </div>
 
+      <div class="col-xl-3 col-lg-3 col-md-6">
+        <div>
+          <h4 class="text-center opacity-0">Elérhetőség</h4>
+          <ul class="list-unstyled">
+            <li>
+              <p>+06703150345</p>
+            </li>
+            <li>
+              <p><a href="#">bajafuzz@gmail.com</a>
+              </p>
+            </li>
+            <li>
+              <p>Baja, Bácska tér 1</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xl-2 offset-xl-1 col-lg-2 col-md-6">
+        <div class="">
+          <h4 class="text-center opacity-0">Elérhetőség</h4>
+          <h5>Linkek</h5>
+          <ul class="list-unstyled">
+            <li>
+              <a href="/csapatos_munka/weboldalak/festekek.html" class="text-decoration-none">Festékek</a>
+            </li>
+            <li>
+              <a href="/csapatos_munka/weboldalak/faanyagok.html" class="text-decoration-none">Fatömbök</a>
+            </li>
+            <li>
+              <a href="/csapatos_munka/weboldalak/szerszamkatalogus.html" class="text-decoration-none">Szerszámok</a>
+            </li>
+            <li>
+              <a href="/csapatos_munka/weboldalak/rolunk.html" class="text-decoration-none">Rólunk</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+    <div class="d-flex justify-content-center">
+
+      <div class="copyright">
+        <p>Developed and maintained by <a href="#" target="_blank">company</a></p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="/csapatos_munka/bevasarlo-kosar/kosar_szamlalo.js"></script>
     <script src="/csapatos_munka/menu-rendszer/script.js"></script>
 
